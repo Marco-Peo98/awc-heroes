@@ -1,11 +1,13 @@
 import React from 'react';
-import ButtonDefault from './components/ButtonDefault';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-      <ButtonDefault />
-    </div>
+    <section className="app">
+      <Navbar />
+      <Main />
+    </section>
   );
 }
 

@@ -85,7 +85,7 @@
   .app__navbar {
     height: 4rem;
   }
-  
+
   .app__navbar-logo img {
     width: 100px;
   }
@@ -105,8 +105,4 @@
     cursor: pointer;
   }
 
-}
-
-.x {
-  border: 1px solid red;
 }

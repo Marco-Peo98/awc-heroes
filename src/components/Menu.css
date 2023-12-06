@@ -1,0 +1,46 @@
+.app__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--c-black);
+  position: fixed;
+}
+
+.app__menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.app__menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 50%;
+  padding: 1rem;
+  font-size: var(--fs-lg);
+}
+
+.app__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.app__menu-list li {
+  cursor: pointer;
+}
+
+.app__menu-list li:hover {
+  scale: 1.05;
+  color: var(--c-primary);
+  transition: all 0.2s ease-in-out;
+}

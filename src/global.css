@@ -55,6 +55,7 @@ body {
 
 body {
   text-rendering: optimizeSpeed;
+  background-color: var(--c-white);
 }
 
 a {
@@ -159,4 +160,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.k {
+  border: 1px solid red;
 }

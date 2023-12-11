@@ -2,11 +2,13 @@ import React from "react";
 import '../../src/global.css';
 import './ButtonDefault.css';
 
-function ButtonDefault( props ) {
+function ButtonDefault({ children, onClick }) {
   return (
-    <button className="btn-default">
-      { props.children }
-    </button>
+    <div className="btn__default">
+      <button className="btn__default-glass" onClick={onClick}>
+        { children }
+      </button>
+    </div>
   );
 }
 

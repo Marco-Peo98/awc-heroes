@@ -7,7 +7,7 @@ import marvelLogo from '../images/marvel-logo.svg';
 import ButtonDefault from "./ButtonDefault";
 import { IconMenu } from "./Icons";
 
-function Navbar({ open, setOpen }) {
+function Navbar({ open, setOpen, setLogin }) {
 
   return (
     <nav className="app__navbar">
@@ -24,7 +24,7 @@ function Navbar({ open, setOpen }) {
         </ul>
       </div>
       <div className="app__navbar-container app__navbar-login">
-        <ButtonDefault>ACCEDI</ButtonDefault>
+        <ButtonDefault onClick={() => setLogin(true)}>ACCEDI</ButtonDefault>
       </div>
 
       {/* ON MOBILE */}

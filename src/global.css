@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
 :root {
 
   /* COLORS */
@@ -6,9 +8,9 @@
   --c-black: rgb(32, 32, 32);
 
   /* FONTS */
-  --f-default: Arial, Helvetica, sans-serif;
-  --f-title: Helvetica Neue, Helvetica, sans-serif;
-  --f-body: Arial, sans-serif;
+  --f-default: 'Arial', 'Helvetica', sans-serif;
+  --f-title: 'Roboto', sans-serif;
+  --f-body: 'Open Sans', sans-serif;
 
   /* FONT SIZES */
   --fs-xxs: 0.25rem;
@@ -55,7 +57,8 @@ body {
 
 body {
   text-rendering: optimizeSpeed;
-  background-color: var(--c-white);
+  background-color: var(--c-black);
+
 }
 
 a {
@@ -164,4 +167,8 @@ a {
 
 .k {
   border: 1px solid red;
+}
+
+.x {
+  border: 1px solid white;
 }

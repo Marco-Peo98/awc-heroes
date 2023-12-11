@@ -1,26 +1,47 @@
-.btn-default {
+.btn__default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  width: 6rem;
+  padding: 0.2rem 0.2rem;
   font-family: var(--f-title);
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   color: var(--c-white);
-  background-color: var(--c-primary);
+  background-color: var(--c-black);
+  background-image:
+    radial-gradient(at 50% 50%, rgb(236, 29, 36) 0, transparent 60%),
+    radial-gradient(at 50% 50%, rgb(32, 32, 32) 0, transparent 50%);
+  border-radius: 2rem;
   border: none;
-  border-radius: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-.btn-default:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+.btn__default-glass {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(0px) saturate(100%);
+  -webkit-backdrop-filter: blur(0px) saturate(100%);
+  background-color: rgba(32, 32, 32, 0);
+  border-radius: 2rem;
+  border: 1.5px solid var(--c-white);
+  cursor: pointer;
+  color: var(--c-white);
 }
 
-.btn-default:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+.btn__default:hover {
+  backdrop-filter: blur(5px) saturate(200%);
+  -webkit-backdrop-filter: blur(5px) saturate(200%);
+  background-color: rgba(32, 32, 32, 0.5);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn__default:active {
+  transform: scale(0.95);
+  transition: all 0.2s ease-in-out;
 }

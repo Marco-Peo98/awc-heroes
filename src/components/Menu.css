@@ -15,6 +15,12 @@
   cursor: pointer;
 }
 
+.app__menu-icon:hover svg {
+  scale: 1.05;
+  fill: var(--c-primary);
+  transition: all 0.2s ease-in-out;
+}
+
 .app__menu-content {
   display: flex;
   flex-direction: column;
